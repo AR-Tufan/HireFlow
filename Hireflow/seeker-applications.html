@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Applications - HireFlow</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="index.html" class="logo"><span class="logo-text">Hire<span>Flow</span></span></a>
+        <div class="nav-actions">
+          <a href="login.html" class="btn btn-outline">Logout</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+        <div class="dashboard-layout">
+            <aside class="sidebar">
+                <div class="sidebar-menu">
+                    <a href="seeker-dashboard.html">Dashboard</a>
+                    <a href="seeker-profile.html">My Profile</a>
+                    <a href="seeker-resume.html">My Resume / CV</a>
+                    <a href="seeker-applications.html" class="active">My Applications</a>
+                    <a href="seeker-saved-jobs.html">Saved Jobs</a>
+                </div>
+            </aside>
+
+            <main class="dashboard-content">
+                <div class="dashboard-box">
+                    <h2 style="margin-bottom: 20px;">My Applications</h2>
+                    
+                    <table style="width: 100%; text-align: left; border-collapse: collapse;">
+                        <thead>
+                            <tr style="border-bottom: 2px solid var(--border-color);">
+                                <th style="padding: 10px 0;">Job Title</th>
+                                <th>Company</th>
+                                <th>Applied Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid var(--border-color);">
+                                <td style="padding: 15px 0;">
+                                    <a href="job-details.html" style="font-weight: 500;">Senior React Developer</a>
+                                </td>
+                                <td>Google</td>
+                                <td style="color: var(--text-muted); font-size: 14px;">10 Oct 2026</td>
+                                <td><span style="background: #dcfce7; color: #166534; padding: 5px 10px; border-radius: 4px; font-size: 12px;">Shortlisted</span></td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--border-color);">
+                                <td style="padding: 15px 0;">
+                                    <a href="job-details.html" style="font-weight: 500;">Node.js Developer</a>
+                                </td>
+                                <td>Brain Station 23</td>
+                                <td style="color: var(--text-muted); font-size: 14px;">08 Oct 2026</td>
+                                <td><span style="background: #fef3c7; color: #92400e; padding: 5px 10px; border-radius: 4px; font-size: 12px;">Under Review</span></td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--border-color);">
+                                <td style="padding: 15px 0;">
+                                    <a href="job-details.html" style="font-weight: 500;">Frontend Engineer</a>
+                                </td>
+                                <td>Fiverr</td>
+                                <td style="color: var(--text-muted); font-size: 14px;">01 Oct 2026</td>
+                                <td><span style="background: #fee2e2; color: #991b1b; padding: 5px 10px; border-radius: 4px; font-size: 12px;">Rejected</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </div>
+
+<script src="js/main.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

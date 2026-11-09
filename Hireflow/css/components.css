@@ -1,0 +1,21 @@
+.company-logo { width: 50px; height: 50px; background: var(--bg-color); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: bold; color: var(--primary-color); font-size: 20px; flex-shrink: 0; }
+.job-tag { background: var(--bg-color); padding: 5px 10px; border-radius: 5px; font-size: 12px; }
+
+/* Match Score */
+.match-container { display: flex; align-items: center; gap: 20px; background: #f0f7ff; padding: 20px; border-radius: var(--radius); border: 1px solid #cce5ff; margin-bottom: 20px; }
+.match-circle { width: 80px; height: 80px; border-radius: 50%; background: conic-gradient(var(--secondary-color) 85%, #e5e7eb 0); display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 20px; color: var(--text-main); }
+.match-circle-inner { width: 65px; height: 65px; background: #f0f7ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+
+/* Skill Tags */
+.skill-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.skill-tag { padding: 5px 12px; border-radius: 20px; font-size: 13px; font-weight: 500; }
+.skill-match { background: #dcfce7; color: #166534; border: 1px solid #bbf7d0; }
+.skill-missing { background: #fee2e2; color: #991b1b; border: 1px solid #fecaca; }
+
+/* Timeline */
+.timeline { position: relative; padding-left: 30px; margin-top: 20px; }
+.timeline::before { content: ''; position: absolute; left: 8px; top: 0; bottom: 0; width: 2px; background: var(--border-color); }
+.timeline-item { position: relative; margin-bottom: 25px; }
+.timeline-dot { position: absolute; left: -30px; width: 18px; height: 18px; border-radius: 50%; background: var(--border-color); border: 3px solid var(--white); top: 2px; }
+.timeline-item.active .timeline-dot { background: var(--primary-color); }
+.timeline-item.success .timeline-dot { background: var(--secondary-color); }

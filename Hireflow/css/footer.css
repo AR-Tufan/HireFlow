@@ -1,0 +1,5 @@
+.footer { background: var(--white); padding: 40px 0 20px; border-top: 1px solid var(--border-color); margin-top: 40px; }
+.footer-content { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 30px; }
+.footer-col h3, .footer-col h4 { margin-bottom: 15px; color: var(--text-main); }
+.footer-col a { display: block; color: var(--text-muted); margin-bottom: 10px; font-size: 14px; }
+.footer-bottom { text-align: center; padding-top: 20px; margin-top: 20px; border-top: 1px solid var(--border-color); color: var(--text-muted); font-size: 14px; }

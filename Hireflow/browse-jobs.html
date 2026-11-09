@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Jobs - HireFlow</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="index.html" class="logo"><span class="logo-text">Hire<span>Flow</span></span></a>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="browse-jobs.html">Browse Jobs</a>
+          <a href="about.html">About</a>
+        </nav>
+        <div class="nav-actions">
+          <a href="login.html" class="btn btn-outline">Login</a>
+          <a href="register.html" class="btn btn-primary">Register</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+        <div class="browse-layout">
+            <!-- Filter Sidebar -->
+            <aside class="filter-box">
+                <h3>Filter Jobs</h3>
+                <div class="filter-group">
+                    <label>Category</label>
+                    <select>
+                        <option>All Categories</option>
+                        <option>IT & Software</option>
+                        <option>Marketing</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Location</label>
+                    <select>
+                        <option>Any Location</option>
+                        <option>Dhaka</option>
+                        <option>Remote</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary btn-block">Apply Filters</button>
+            </aside>
+
+            <!-- Job List -->
+            <main>
+                <div class="job-card" style="margin-bottom: 15px;">
+                    <div class="job-card-header">
+                        <div class="company-logo">G</div>
+                        <div>
+                            <h3 class="job-title">Senior React Developer</h3>
+                            <p class="company-name">Google</p>
+                        </div>
+                    </div>
+                    <div class="job-details">
+                        <span class="job-tag">Dhaka, BD</span>
+                        <span class="job-tag">Full Time</span>
+                        <span class="job-tag">React.js</span>
+                    </div>
+                    <div class="job-card-footer">
+                        <span class="salary">৳ 80,000 - 120,000</span>
+                        <a href="job-details.html" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-card-header">
+                        <div class="company-logo">B</div>
+                        <div>
+                            <h3 class="job-title">Node.js Backend Developer</h3>
+                            <p class="company-name">Brain Station 23</p>
+                        </div>
+                    </div>
+                    <div class="job-details">
+                        <span class="job-tag">Dhaka, BD</span>
+                        <span class="job-tag">Full Time</span>
+                        <span class="job-tag">MongoDB</span>
+                    </div>
+                    <div class="job-card-footer">
+                        <span class="salary">৳ 60,000 - 90,000</span>
+                        <a href="job-details.html" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="footer" style="margin-top: 50px;">
+      <div class="footer-bottom"><p>&copy; 2026 HireFlow. All rights reserved.</p></div>
+    </footer>
+
+
+<script src="js/main.js"></script>
+<script src="js/jobs.js"></script> <!-- শুধু jobs পেজে -->
+
+
+</body>
+</html>

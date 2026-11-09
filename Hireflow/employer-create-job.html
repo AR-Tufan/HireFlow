@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a Job - HireFlow</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="index.html" class="logo"><span class="logo-text">Hire<span>Flow</span></span></a>
+        <div class="nav-actions">
+          <a href="login.html" class="btn btn-outline">Logout</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+        <div class="dashboard-layout">
+            <aside class="sidebar">
+                <div class="sidebar-menu">
+                    <a href="employer-dashboard.html">Dashboard</a>
+                    <a href="employer-jobs.html">My Jobs</a>
+                    <a href="employer-create-job.html" class="active">Post a New Job</a>
+                    <a href="employer-applicants.html">Applicants</a>
+                    <a href="employer-ranking.html">Candidate Ranking</a>
+                </div>
+            </aside>
+
+            <main class="dashboard-content">
+                <div class="dashboard-box">
+                    <h2 style="margin-bottom: 20px;">Create a New Job Post</h2>
+                    
+                    <form action="employer-jobs.html">
+                        <div class="form-group">
+                            <label>Job Title</label>
+                            <input type="text" placeholder="e.g. Senior Frontend Developer" required>
+                        </div>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <div class="form-group">
+                                <label>Category</label>
+                                <select>
+                                    <option>IT & Software</option>
+                                    <option>Marketing</option>
+                                    <option>Engineering</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Job Type</label>
+                                <select>
+                                    <option>Full Time</option>
+                                    <option>Part Time</option>
+                                    <option>Remote</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Location</label>
+                                <input type="text" placeholder="e.g. Dhaka, Bangladesh">
+                            </div>
+                            <div class="form-group">
+                                <label>Salary Range (Optional)</label>
+                                <input type="text" placeholder="e.g. ৳ 50,000 - 80,000">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Required Skills (Comma separated)</label>
+                            <input type="text" placeholder="e.g. React.js, Node.js, MongoDB">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Job Description & Requirements</label>
+                            <textarea rows="6" placeholder="Write job details here..." style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: var(--radius); font-family: var(--font-family);"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Application Deadline</label>
+                            <input type="date">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="padding: 12px 30px;">Publish Job</button>
+                        <a href="employer-jobs.html" class="btn btn-outline" style="padding: 12px 30px;">Cancel</a>
+                    </form>
+                </div>
+            </main>
+        </div>
+    </div>
+
+<script src="js/main.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

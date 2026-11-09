@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HireFlow - Find Your Dream Job</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <!-- 1. NAVBAR (Top Menu) -->
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="index.html" class="logo">
+          <span class="logo-text">Hire<span>Flow</span></span>
+        </a>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="browse-jobs.html">Browse Jobs</a>
+          <a href="about.html">About</a>
+        </nav>
+        <div class="nav-actions">
+          <a href="login.html" class="btn btn-outline">Login</a>
+          <a href="register.html" class="btn btn-primary">Register</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- 2. HERO SECTION (Blue Banner) -->
+    <section class="hero">
+        <div class="container">
+            <h1>Find Your Dream Job</h1>
+            <p>Search, apply, and get hired faster with HireFlow's smart matching.</p>
+            <div class="search-box">
+                <input type="text" placeholder="Job title, keywords, or company">
+                <button class="btn btn-primary">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. CATEGORIES -->
+    <section class="container">
+        <h2 class="section-title">Explore by Category</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <h4>IT & Software</h4>
+                <span>120 Jobs</span>
+            </div>
+            <div class="category-card">
+                <h4>Engineering</h4>
+                <span>85 Jobs</span>
+            </div>
+            <div class="category-card">
+                <h4>Marketing</h4>
+                <span>64 Jobs</span>
+            </div>
+            <div class="category-card">
+                <h4>Finance</h4>
+                <span>42 Jobs</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. FEATURED JOBS -->
+    <section class="container">
+        <h2 class="section-title">Featured Jobs</h2>
+        <div class="job-grid">
+            
+            <!-- Job Card 1 -->
+            <div class="job-card">
+                <div class="job-card-header">
+                    <div class="company-logo">G</div>
+                    <div>
+                        <h3 class="job-title">Frontend Developer</h3>
+                        <p class="company-name">Google</p>
+                    </div>
+                </div>
+                <div class="job-details">
+                    <span class="job-tag">Dhaka, BD</span>
+                    <span class="job-tag">Full Time</span>
+                    <span class="job-tag">React.js</span>
+                </div>
+                <div class="job-card-footer">
+                    <span class="salary">৳ 50,000 - 80,000</span>
+                    <a href="job-details.html" class="btn btn-outline">Apply Now</a>
+                </div>
+            </div>
+
+            <!-- Job Card 2 -->
+            <div class="job-card">
+                <div class="job-card-header">
+                    <div class="company-logo">B</div>
+                    <div>
+                        <h3 class="job-title">Backend Engineer</h3>
+                        <p class="company-name">Brain Station 23</p>
+                    </div>
+                </div>
+                <div class="job-details">
+                    <span class="job-tag">Dhaka, BD</span>
+                    <span class="job-tag">Full Time</span>
+                    <span class="job-tag">Node.js</span>
+                </div>
+                <div class="job-card-footer">
+                    <span class="salary">৳ 60,000 - 90,000</span>
+                    <a href="job-details.html" class="btn btn-outline">Apply Now</a>
+                </div>
+            </div>
+
+            <!-- Job Card 3 -->
+            <div class="job-card">
+                <div class="job-card-header">
+                    <div class="company-logo">F</div>
+                    <div>
+                        <h3 class="job-title">UI/UX Designer</h3>
+                        <p class="company-name">Fiverr</p>
+                    </div>
+                </div>
+                <div class="job-details">
+                    <span class="job-tag">Remote</span>
+                    <span class="job-tag">Part Time</span>
+                    <span class="job-tag">Figma</span>
+                </div>
+                <div class="job-card-footer">
+                    <span class="salary">৳ 40,000 - 60,000</span>
+                    <a href="job-details.html" class="btn btn-outline">Apply Now</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. FOOTER -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-col">
+          <h3>HireFlow</h3>
+          <p style="color: var(--text-muted); font-size: 14px;">Intelligent Recruitment and Candidate Matching Platform.</p>
+        </div>
+        <div class="footer-col">
+          <h4>For Candidates</h4>
+          <a href="#">Browse Jobs</a>
+          <a href="#">Create Resume</a>
+        </div>
+        <div class="footer-col">
+          <h4>For Employers</h4>
+          <a href="#">Post a Job</a>
+          <a href="#">Search Candidates</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 HireFlow. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!--Js file-->
+    <script src="js/main.js"></script>
+    <script src="js/jobs.js"></script> <!-- শুধু jobs পেজে -->
+
+</body>
+</html>

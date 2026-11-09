@@ -1,0 +1,6 @@
+/* Admin specific overrides */
+.admin-title { color: var(--danger); }
+.table-responsive { width: 100%; overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; text-align: left; }
+th { border-bottom: 2px solid var(--border-color); padding: 10px 0; }
+td { border-bottom: 1px solid var(--border-color); padding: 15px 0; }

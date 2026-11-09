@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Ranking - HireFlow</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="index.html" class="logo"><span class="logo-text">Hire<span>Flow</span></span></a>
+        <div class="nav-actions">
+          <a href="login.html" class="btn btn-outline">Logout</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+        <div class="dashboard-layout">
+            <aside class="sidebar">
+                <div class="sidebar-menu">
+                    <a href="employer-dashboard.html">Dashboard</a>
+                    <a href="employer-jobs.html">My Jobs</a>
+                    <a href="employer-create-job.html">Post a New Job</a>
+                    <a href="employer-applicants.html">Applicants</a>
+                    <a href="employer-ranking.html" class="active">Candidate Ranking</a>
+                </div>
+            </aside>
+
+            <main class="dashboard-content">
+                <div class="dashboard-box" style="margin-bottom: 20px;">
+                    <h2>Smart Candidate Ranking</h2>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 15px;">Select a job to see the best-matched candidates automatically ranked by AI.</p>
+                    
+                    <select class="form-group" style="max-width: 300px; padding: 10px; border-radius: var(--radius); border: 1px solid var(--border-color);">
+                        <option>Senior React Developer</option>
+                        <option>UI/UX Designer</option>
+                    </select>
+                </div>
+
+                <div class="dashboard-box">
+                    <table style="width: 100%; text-align: left; border-collapse: collapse;">
+                        <thead>
+                            <tr style="border-bottom: 2px solid var(--border-color);">
+                                <th style="padding: 10px 0;">Rank</th>
+                                <th>Candidate Name</th>
+                                <th>Match Score</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid var(--border-color);">
+                                <td style="padding: 15px 0; font-weight: bold; font-size: 18px; color: var(--primary-color);">1</td>
+                                <td>
+                                    <strong>Rahim Ahmed</strong><br>
+                                    <span style="font-size: 12px; color: var(--text-muted);">3 Years Exp</span>
+                                </td>
+                                <td>
+                                    <div style="display: flex; align-items: center; gap: 10px;">
+                                        <div style="flex: 1; background: #e5e7eb; height: 8px; border-radius: 4px; width: 100px;">
+                                            <div style="width: 85%; background: var(--secondary-color); height: 8px; border-radius: 4px;"></div>
+                                        </div>
+                                        <strong>85%</strong>
+                                    </div>
+                                </td>
+                                <td><a href="employer-applicant-detail.html" class="btn btn-outline" style="padding: 5px 10px; font-size: 12px;">View Profile</a></td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--border-color);">
+                                <td style="padding: 15px 0; font-weight: bold; font-size: 18px; color: var(--text-muted);">2</td>
+                                <td>
+                                    <strong>Karim Khan</strong><br>
+                                    <span style="font-size: 12px; color: var(--text-muted);">2 Years Exp</span>
+                                </td>
+                                <td>
+                                    <div style="display: flex; align-items: center; gap: 10px;">
+                                        <div style="flex: 1; background: #e5e7eb; height: 8px; border-radius: 4px; width: 100px;">
+                                            <div style="width: 60%; background: #f59e0b; height: 8px; border-radius: 4px;"></div>
+                                        </div>
+                                        <strong>60%</strong>
+                                    </div>
+                                </td>
+                                <td><a href="employer-applicant-detail.html" class="btn btn-outline" style="padding: 5px 10px; font-size: 12px;">View Profile</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </div>
+
+<script src="js/main.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

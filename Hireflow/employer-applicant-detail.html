@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applicant Detail - HireFlow</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="index.html" class="logo"><span class="logo-text">Hire<span>Flow</span></span></a>
+        <div class="nav-actions">
+          <a href="login.html" class="btn btn-outline">Logout</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+        <div class="dashboard-layout">
+            <aside class="sidebar">
+                <div class="sidebar-menu">
+                    <a href="employer-dashboard.html">Dashboard</a>
+                    <a href="employer-jobs.html">My Jobs</a>
+                    <a href="employer-create-job.html">Post a New Job</a>
+                    <a href="employer-applicants.html" class="active">Applicants</a>
+                    <a href="employer-ranking.html">Candidate Ranking</a>
+                </div>
+            </aside>
+
+            <main class="dashboard-content">
+                <!-- Header -->
+                <div class="dashboard-box" style="display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h2>Rahim Ahmed</h2>
+                        <p style="color: var(--text-muted);">rahim@email.com | +880 1700-000000</p>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary">Shortlist</button>
+                        <button class="btn btn-outline" style="color: red; border-color: red;">Reject</button>
+                    </div>
+                </div>
+
+                <!-- Match Score Breakdown -->
+                <div class="dashboard-box">
+                    <h3>Job Match Analysis</h3>
+                    <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 15px;">Comparing candidate profile with: <strong>Senior React Developer</strong></p>
+                    
+                    <div class="match-container">
+                        <div class="match-circle">
+                            <div class="match-circle-inner">85%</div>
+                        </div>
+                        <div>
+                            <h3 style="color: var(--secondary-color);">Excellent Match</h3>
+                            <p style="font-size: 14px;">The candidate has most of the required skills for this position.</p>
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div>
+                            <strong style="color: #166534;">✅ Matched Skills</strong>
+                            <div class="skill-list">
+                                <span class="skill-tag skill-match">React.js</span>
+                                <span class="skill-tag skill-match">JavaScript</span>
+                                <span class="skill-tag skill-match">HTML/CSS</span>
+                                <span class="skill-tag skill-match">Git</span>
+                            </div>
+                        </div>
+                        <div>
+                            <strong style="color: #991b1b;">❌ Missing Skills</strong>
+                            <div class="skill-list">
+                                <span class="skill-tag skill-missing">Node.js</span>
+                                <span class="skill-tag skill-missing">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Profile Details -->
+                <div class="dashboard-box">
+                    <h3>Candidate Profile</h3>
+                    <p style="margin-top: 10px;"><strong>Experience:</strong> 3 Years in Frontend Development</p>
+                    <p style="margin-top: 5px;"><strong>Education:</strong> B.Sc in CSE, University of Dhaka</p>
+                    <div style="margin-top: 15px;">
+                        <a href="#" class="btn btn-outline">Download CV (PDF)</a>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+<script src="js/main.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

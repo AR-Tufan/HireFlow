@@ -1,0 +1,8 @@
+.auth-wrapper { min-height: 80vh; display: flex; align-items: center; justify-content: center; padding: 40px 20px; }
+.auth-card { background: var(--white); padding: 40px; border-radius: var(--radius); box-shadow: var(--shadow-sm); border: 1px solid var(--border-color); width: 100%; max-width: 450px; }
+.auth-card h2 { margin-bottom: 10px; text-align: center; }
+.auth-card p.subtitle { text-align: center; color: var(--text-muted); margin-bottom: 25px; font-size: 14px; }
+.form-group { margin-bottom: 20px; }
+.form-group label { display: block; margin-bottom: 8px; font-weight: 500; font-size: 14px; }
+.form-group input, .form-group select { width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: var(--radius); outline: none; font-family: var(--font-family); }
+.form-group input:focus { border-color: var(--primary-color); }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saved Jobs - HireFlow</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="index.html" class="logo"><span class="logo-text">Hire<span>Flow</span></span></a>
+        <div class="nav-actions"><a href="login.html" class="btn btn-outline">Logout</a></div>
+      </div>
+    </header>
+
+    <div class="container">
+        <div class="dashboard-layout">
+            <aside class="sidebar">
+                <div class="sidebar-menu">
+                    <a href="seeker-dashboard.html">Dashboard</a>
+                    <a href="seeker-profile.html">My Profile</a>
+                    <a href="seeker-resume.html">My Resume / CV</a>
+                    <a href="seeker-applications.html">My Applications</a>
+                    <a href="seeker-saved-jobs.html" class="active">Saved Jobs</a>
+                </div>
+            </aside>
+
+            <main class="dashboard-content">
+                <div class="dashboard-box">
+                    <h2 style="margin-bottom: 20px;">Saved Jobs</h2>
+                    <div class="job-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                        
+                        <div class="job-card">
+                            <div class="job-card-header">
+                                <div class="company-logo">G</div>
+                                <div>
+                                    <h3 class="job-title">Frontend Developer</h3>
+                                    <p class="company-name">Google</p>
+                                </div>
+                            </div>
+                            <div class="job-details">
+                                <span class="job-tag">Dhaka, BD</span>
+                                <span class="job-tag">Full Time</span>
+                            </div>
+                            <div class="job-card-footer">
+                                <a href="job-details.html" class="btn btn-outline" style="width: 48%;">View</a>
+                                <button class="btn btn-primary" style="width: 48%; background: red; border-color: red;">Remove</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+<script src="js/main.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

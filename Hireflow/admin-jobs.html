@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Moderation - HireFlow Admin</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="index.html" class="logo"><span class="logo-text" style="color: red;">Hire<span>Flow</span> Admin</span></a>
+        <div class="nav-actions">
+            <a href="login.html" class="btn btn-outline">Logout</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Dashboard Layout -->
+    <div class="container">
+        <div class="dashboard-layout">
+            
+            <!-- Admin Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-menu">
+                    <a href="admin-dashboard.html">Dashboard</a>
+                    <a href="admin-users.html">Manage Users</a>
+                    <a href="admin-employers.html">Employer Verification</a>
+                    <a href="admin-jobs.html" class="active">Job Moderation</a>
+                    <a href="admin-reports.html">Reports</a>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="dashboard-content">
+                <div class="dashboard-box">
+                    <h2 style="margin-bottom: 20px;">Job Post Moderation</h2>
+                    <p style="color: var(--text-muted); margin-bottom: 20px; font-size: 14px;">Review job posts and remove any inappropriate or spam content.</p>
+                    
+                    <table style="width: 100%; text-align: left; border-collapse: collapse;">
+                        <thead>
+                            <tr style="border-bottom: 2px solid var(--border-color);">
+                                <th style="padding: 10px 0;">Job Title</th>
+                                <th>Company</th>
+                                <th>Date Posted</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Row 1: Active Job -->
+                            <tr style="border-bottom: 1px solid var(--border-color);">
+                                <td style="padding: 15px 0; font-weight: 500;">Senior React Developer</td>
+                                <td>Google</td>
+                                <td style="font-size: 14px; color: var(--text-muted);">12 Oct 2026</td>
+                                <td><span style="background: #dcfce7; color: #166534; padding: 4px 8px; border-radius: 4px; font-size: 12px;">Active</span></td>
+                                <td>
+                                    <button class="btn btn-outline" style="padding: 5px 10px; font-size: 12px; color: red; border-color: red;">Remove</button>
+                                </td>
+                            </tr>
+                            
+                            <!-- Row 2: Flagged Spam Job -->
+                            <tr style="border-bottom: 1px solid var(--border-color);">
+                                <td style="padding: 15px 0; font-weight: 500;">Earn Money Fast!! (No Experience)</td>
+                                <td>Spam Company Ltd.</td>
+                                <td style="font-size: 14px; color: var(--text-muted);">13 Oct 2026</td>
+                                <td><span style="background: #fee2e2; color: #991b1b; padding: 4px 8px; border-radius: 4px; font-size: 12px;">Flagged</span></td>
+                                <td>
+                                    <button class="btn btn-outline" style="padding: 5px 10px; font-size: 12px; color: red; border-color: red;">Remove</button>
+                                </td>
+                            </tr>
+
+                            <!-- Row 3: Another Active Job -->
+                            <tr style="border-bottom: 1px solid var(--border-color);">
+                                <td style="padding: 15px 0; font-weight: 500;">Marketing Manager</td>
+                                <td>Tech BD Ltd.</td>
+                                <td style="font-size: 14px; color: var(--text-muted);">10 Oct 2026</td>
+                                <td><span style="background: #dcfce7; color: #166534; padding: 4px 8px; border-radius: 4px; font-size: 12px;">Active</span></td>
+                                <td>
+                                    <button class="btn btn-outline" style="padding: 5px 10px; font-size: 12px; color: red; border-color: red;">Remove</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </div>
+
+<script src="js/main.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

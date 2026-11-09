@@ -1,0 +1,7 @@
+.navbar { background: var(--white); box-shadow: var(--shadow-sm); position: sticky; top: 0; z-index: 100; }
+.nav-container { display: flex; justify-content: space-between; align-items: center; height: 70px; }
+.logo-text { color: var(--primary-color); font-weight: 700; font-size: 24px; }
+.logo-text span { color: var(--secondary-color); }
+.nav-links a { color: var(--text-main); margin: 0 15px; font-weight: 500; }
+.nav-links a:hover { color: var(--primary-color); }
+.nav-actions { display: flex; gap: 10px; align-items: center; }
